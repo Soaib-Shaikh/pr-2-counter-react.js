@@ -1,0 +1,129 @@
+
+
+body {
+    background-color: #000000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.neumorphic-stopwatch-container {
+    background-color: #1c1c1e; 
+    color: #ffffff;
+    padding: 30px 20px; 
+    border-radius: 14px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px; 
+    width: 90%; 
+    max-width: 330px; 
+}
+
+.neumorphic-display-panel {
+    background-color: transparent;
+    width: 100%; 
+    padding: 0; 
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+/* Time Display Text (Single-Line) */
+.neumorphic-display-time {
+    font-size: 4rem; 
+    font-weight: 200;
+    color: #ffffff;
+    display: flex;
+    align-items: flex-end; 
+    font-variant-numeric: tabular-nums;
+    letter-spacing: normal; 
+    white-space: nowrap; 
+}
+
+.time-min-sec {
+    font-size: 4.5rem; 
+    letter-spacing: -2px;
+}
+
+.time-separator {
+    font-size: 4rem; 
+    margin: 0 2px;
+}
+
+.time-ms {
+    font-size: 3rem; 
+    letter-spacing: -1px;
+    padding-left: 2px;
+    transform: translateY(3px); 
+}
+
+.neumorphic-buttons-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 300px; 
+    gap: 15px; 
+}
+
+.neumorphic-button {
+    width: 65px; 
+    height: 65px; 
+    border-radius: 50%; 
+    border: none;
+    font-size: 0.95rem; 
+    font-weight: 500;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+    text-align: center;
+    text-transform: capitalize; 
+    
+    background-color: #303032; 
+    box-shadow: none; 
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.neumorphic-button:active {
+    background-color: #404044;
+}
+
+
+.neumorphic-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #303032;
+    color: #555555;
+}
+
+.play-button {
+    background-color: #34c759; 
+}
+.stop-button {
+    background-color: #ff3b30; 
+}
+.reset-button, .lap-button {
+    background-color: #ffffff;
+    color: #000000; 
+}
+
+.stopwatch-heading {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px; /* Space between heading and timer circle */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ff00cc; /* Small accent line */
+    padding-bottom: 5px;
+}
